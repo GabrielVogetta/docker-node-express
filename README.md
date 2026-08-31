@@ -9,3 +9,10 @@ Documentações utilizadas:
 [Node Image Docker Hub](https://hub.docker.com/_/node)
 [How To Use This Image (Node)](https://github.com/nodejs/docker-node/blob/main/README.md#how-to-use-this-image)
 [ExpressJs](https://expressjs.com/en/5x/starter/hello-world/)
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/GabrielVogetta/docker-node-express.git
+git push -u origin main
