@@ -1,25 +1,25 @@
 name: Continuous Integration
 
 on:
-  push:
+  push: 
+    branches: [test]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkando código
         uses: actions/checkout@v7
 
-      - name: Set up Node.js
+      - name: Setando Node.js
         uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
 
-      - name: Install dependencies
-        run: |
-          npm ci
-          npm run test
-          npm run build
-          npm run deploy
+      - name: Instalando dependências
+        run: npm ci
+
+      - name: Simulando testes
+        run: npm run test
