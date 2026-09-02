@@ -1,7 +1,8 @@
 # Nodejs + Express + Docker + GitHub Actions
 
-Utilizando node para estudar o uso de uma imagem node no docker.
-Utilizando também o framework express, para testar o uso de demais depedências para baixar no docker.
+Repositório para projeto da matéria de devops, utilizando docker, nodejs, express e github actions
+
+Utilizando node e expressjs para estudar as ferramentas e o uso de uma imagem node e demais dependências no docker.
 
 Documentações utilizadas:
 
@@ -9,10 +10,4 @@ Documentações utilizadas:
 [Node Image Docker Hub](https://hub.docker.com/_/node)
 [How To Use This Image (Node)](https://github.com/nodejs/docker-node/blob/main/README.md#how-to-use-this-image)
 [ExpressJs](https://expressjs.com/en/5x/starter/hello-world/)
-
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/GabrielVogetta/docker-node-express.git
-git push -u origin main
+[gitignore](https://docs.github.com/pt/get-started/git-basics/ignoring-files)
