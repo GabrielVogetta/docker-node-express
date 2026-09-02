@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "scripts": {
+    "test": "echo 'Rodando testes...'",
+    "build": "echo 'Buildando...'",
+    "deploy": "echo 'Deployando...'"
   }
 }
