@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Simulando testes, build e deploy
-        run: |
+        run: | # Roda os scripts test, build e deploy escritos em package.json
           npm run test
           npm run build
           npm run deploy
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
+        uses: docker/setup-qemu-action@v4
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
