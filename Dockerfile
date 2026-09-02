@@ -4,7 +4,7 @@ FROM node:24
 # Define o diretório de trabalho
 WORKDIR /usr/src/app
 
-# Copia os arquivos de dependências
+# Copia o arquivo de dependências
 COPY package*.json ./
 
 # Instala as dependências
@@ -13,10 +13,10 @@ RUN npm install
 # Copia o restante da aplicação
 COPY . .
 
-# replace this with your application's default port
+# Expoe a porta 3000 para rodar aplicação
 EXPOSE 3000
 
-# Rodar aplicação com expressjs
+# Roda aplicação com expressjs
 CMD ["node", "index.js"]
 
 # Como buildar e rodar?
