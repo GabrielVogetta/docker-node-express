@@ -21,5 +21,7 @@ jobs:
       - name: Instalando dependências
         run: npm ci
 
-      - name: Simulando testes
-        run: npm run test # roda script test escrito em package.json
+      - name: Realizando testes
+        run: | # Roda os scripts de teste
+          chmod +x ./entrypoint.sh
+          npm run test-api

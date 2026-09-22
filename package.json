@@ -3,8 +3,11 @@
     "express": "^5.2.1"
   },
   "scripts": {
-    "test": "echo 'Rodando testes...'",
-    "build": "echo 'Buildando...'",
-    "deploy": "echo 'Deployando...'"
+    "test1": "node ./tests/test1.js",
+    "test2": "node ./tests/test2.js",
+    "test3": "node ./tests/test3.js",
+    "test4": "node ./tests/test4.js",
+    "test5": "node ./tests/test5.js",
+    "test-api": "./entrypoint.sh"
   }
 }

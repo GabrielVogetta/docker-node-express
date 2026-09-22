@@ -21,8 +21,8 @@ jobs:
       - name: Instalando dependências
         run: npm ci
 
-      - name: Simulando testes, build e deploy
-        run: | # Roda os scripts test, build e deploy escritos em package.json
+      - name: Realizando testes
+        run: | # Roda os scripts de teste
           npm run test
           npm run build
           npm run deploy
