@@ -1,5 +1,5 @@
 (() => {
     // função genérica
 
-    console.log("Primeiro teste realizado!");
+    console.log("Primeiro teste realizado!";
 })
