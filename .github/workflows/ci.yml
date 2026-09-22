@@ -23,4 +23,4 @@ jobs:
 
       - name: Realizando testes
         run: | # Roda os scripts de teste
-          npm run test1
+          npm run test-api
