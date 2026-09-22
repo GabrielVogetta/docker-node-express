@@ -1,3 +1,5 @@
+// Requisição ao endpoint
+
 fetch("http://localhost:3000")
     .then(response => {
         return response.json();
@@ -5,4 +7,3 @@ fetch("http://localhost:3000")
     .then(data => {
         console.log(data);
     })
-
