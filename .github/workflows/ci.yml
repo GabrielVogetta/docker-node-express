@@ -22,4 +22,6 @@ jobs:
         run: npm ci
 
       - name: Realizando testes
-        run: npm run test # roda script test escrito em package.json
+        run: | # Roda os scripts de teste
+          npm run test1
+          npm run test2
