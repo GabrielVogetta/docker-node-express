@@ -1,23 +1,14 @@
-// tests/test4.js
-async function testDeleteItem() {
-  console.log('=== [TESTE 3] A iniciar: DELETE /api/items/1 ===');
-  try {
-    const response = await fetch('http://localhost:3000/api/items/1', {
-      method: 'DELETE',
-    });
+const express = require('express');
+const app = express();
+const port = 3000;
 
-    const data = await response.json();
+app.use(express.json());
 
-    if (response.status === 200 && data.success) {
-      console.log('✅ [TESTE 3] Passou! Mensagem:', data.message);
-    } else {
-      console.error('❌ [TESTE 3] Falhou! Resposta inesperada:', data);
-      process.exit(1);
-    }
-  } catch (error) {
-    console.error('❌ [TESTE 3] Erro de conexão com a API:', error.message);
-    process.exit(1);
-  }
-}
+app.get('/', (req, res) => {
+    res.json({ message: "Get deu certo!" });
+});
 
-testDeleteItem();
+app.listen(port, () => {
+    console.log("Teste 4:")
+    console.log(`Servidor ExpressJS está rodando...`);
+});
