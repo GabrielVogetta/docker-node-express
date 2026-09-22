@@ -3,7 +3,7 @@
     "express": "^5.2.1"
   },
   "scripts": {
-    "test": "echo 'Rodando testes...'",
+    "test": "node ./tests/test1.js",
     "build": "echo 'Buildando...'",
     "deploy": "echo 'Deployando...'"
   }
