@@ -23,4 +23,5 @@ jobs:
 
       - name: Realizando testes
         run: | # Roda os scripts de teste
+          chmod +x ./entrypoint.sh
           npm run test-api
